@@ -1,0 +1,58 @@
+# macOS / editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Python caches and test output
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local virtual environments
+.venv/
+.venv.*/
+venv/
+env/
+
+# Environment files and credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cert
+
+# Runtime data
+*.db
+*.sqlite
+*.sqlite3
+*.log
+tmp/
+cache/
+
+# Downloaded model assets
+models/*
+!models/.gitkeep
+*.onnx
+*.safetensors
+
+# Build and release artifacts
+dist/
+release/
+build/*/
+*.zip
+*.pkg
+*.app
+
+# PyInstaller output
+*.toc
+*.pyz
+*.manifest
+*.spec.log

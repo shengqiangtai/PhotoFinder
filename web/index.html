@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhotoFinder</title>
+    <link rel="stylesheet" href="/web/style.css?v=20260427-api-mode" />
+    <script defer src="/web/app.js?v=20260427-api-mode"></script>
+  </head>
+  <body>
+    <div id="photofinder-app" class="photofinder-app">
+      <aside id="left-drawer" class="left-drawer" aria-label="Library drawer">
+        <div id="drawer-body" class="drawer-shell">
+          <header class="drawer-header">
+            <h1 class="shell-title">PhotoFinder</h1>
+            <p class="shell-subtitle">Library, folders, and filters</p>
+          </header>
+          <nav id="drawer-nav" class="drawer-nav" aria-label="Primary">
+            <button id="all-photos-action" class="nav-action" data-view="all-photos" data-active="true" type="button">
+              All Photos
+            </button>
+            <button id="recent-imports-action" class="nav-action" data-view="recent-imports" type="button">
+              Recent Imports
+            </button>
+            <button id="favorites-action" class="nav-action" data-view="favorites" type="button">
+              Favorites
+            </button>
+          </nav>
+          <section id="library-card" class="panel-card">
+            <button id="open-folder-action" class="nav-action" type="button">Add Folder</button>
+            <section id="folder-list" aria-label="Library folders"></section>
+          </section>
+          <section id="models-card" class="panel-card"></section>
+          <section id="indexing-card" class="panel-card"></section>
+          <section id="device-card" class="panel-card"></section>
+        </div>
+      </aside>
+
+      <main id="center-stage" class="center-stage" aria-label="Gallery stage">
+        <section class="stage-header">
+          <div class="stage-header-row">
+            <div class="stage-heading-copy">
+              <h2 id="stage-title" class="section-title">Gallery</h2>
+              <p id="stage-subtitle" class="section-subtitle">Search, browse, and manage your photo library.</p>
+            </div>
+            <button id="settings-action" class="icon-action" type="button" aria-label="Open settings" title="Settings">
+              Settings
+            </button>
+          </div>
+        </section>
+        <section id="stage-content" class="stage-content" aria-label="Photo grid placeholder">
+          <div class="empty-state">
+            <p>Phase 5 shell ready for the gallery experience.</p>
+          </div>
+        </section>
+      </main>
+
+      <aside id="detail-panel" class="detail-panel" aria-label="Photo details">
+        <div class="panel-shell">
+          <header class="panel-header">
+            <h2 id="detail-title" class="section-title">Details</h2>
+            <p id="detail-subtitle" class="section-subtitle">Metadata, preview, and actions</p>
+          </header>
+          <div id="detail-body" class="panel-body">
+            <p>Select an image to inspect its details.</p>
+          </div>
+        </div>
+      </aside>
+
+      <aside id="settings-panel" class="settings-panel" data-open="false" aria-label="Settings panel"></aside>
+    </div>
+  </body>
+</html>
