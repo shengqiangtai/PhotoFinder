@@ -29,6 +29,9 @@ env/
 *.crt
 *.cert
 
+# Local project notes
+PhotoFinder_架构文档.md
+
 # Runtime data
 *.db
 *.sqlite
